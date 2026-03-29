@@ -31,6 +31,9 @@ ros2 run cpp_pubsub talker
 # 启动接收节点
 ros2 run cpp_pubsub listener
 
+# 输出 msg 内容
+ros2 interface show tutorial_interfaces/msg/Num
+
 # 输出 topic 消息
 ros2 topic echo /address_book
 
