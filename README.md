@@ -33,6 +33,9 @@ ros2 run cpp_pubsub listener
 
 # 输出 topic 消息
 ros2 topic echo /address_book
+
+# 输出 plugin 列表
+ros2 plugin list
 ```
 
 [参考链接](https://docs.ros.org/en/rolling/index.html)
