@@ -38,6 +38,14 @@ ros2 plugin list
 ros2 doctor --report
 ```
 
+## Publishing messages using YAML files
+
+```BASH
+ros2 topic echo --once  /cmd_vel > cmd_vel.yaml
+
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist --yaml-file cmd_vel.yaml
+```
+
 ## ```rosdep```
 
 rosdep 是一款依赖管理工具，可用于处理功能包及外部库的依赖关系。它是一个命令行工具，作用是识别并安装编译、运行功能包所需的依赖。
