@@ -11,6 +11,7 @@ int main(int argc, char** argv)
 
   try
   {
+    // 可以通过此处的方式定义别名
     // std::shared_ptr<polygon_base::RegularPolygon> triangle = poly_loader.createSharedInstance("awesome_triangle");
     std::shared_ptr<polygon_base::RegularPolygon> triangle = poly_loader.createSharedInstance("polygon_plugins::Triangle");
     triangle->initialize(10.0);
